@@ -17,3 +17,7 @@ echo "Running the new Elixir container..."
 docker run -d --env-file .env --name elixir --restart unless-stopped -p 17690:17690 elixirprotocol/validator:v3
 
 echo "Elixir Validator is running!"
+
+# Check the logs of the new container
+echo "Following Elixir Validator logs..."
+docker logs -f elixir
